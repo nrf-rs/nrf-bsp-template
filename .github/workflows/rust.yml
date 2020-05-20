@@ -27,11 +27,12 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: build
+          args: --target=thumbv7em-none-eabihf
 
       - uses: actions-rs/cargo@v1
         with:
           command: build
-          args: --examples
+          args: --examples --target=thumbv7em-none-eabihf
 
       - uses: actions-rs/cargo@v1
         with:
