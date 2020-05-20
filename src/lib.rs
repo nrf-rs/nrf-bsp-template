@@ -4,6 +4,7 @@
 //!
 //! User Manual: https://example.com/path/to/manual.pdf
 //!
+#![no_std]
 
 /// The Hardware Abstraction Layer for our SoC
 pub extern crate nrf9160_hal as hal;
